@@ -23,14 +23,18 @@ attacking the main ship in a field of debris.
 ## Assets
 The following assets were taken from the Unity Asset store for the development of this project.
 
-### Drone [Asset-]
+### Drone [Asset- Space Droid by Adequate]
+https://assetstore.unity.com/packages/3d/vehicles/space/space-droid-32200
 ![Drone](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(39).png)
 
-### Journeying Ship [Asset -]
+### Journeying Ship [Asset - Astra Starship Fleet Package by Daniel Kole Productions]
+https://assetstore.unity.com/packages/3d/vehicles/space/astra-starship-fleet-package-4392
 ![Ship](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(43).png)
 
-### Asteroids/ Debris [Asset - ]
+### Asteroids/ Debris [Asset - Asteroids Pack by Mark Dion]
+https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988
 ![Asteroid](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(41).png)
 
-### Backdrop [Asset -]
+### Backdrop [Asset - Vast Outer Space by Prodigious Creations]
+https://assetstore.unity.com/packages/3d/environments/sci-fi/vast-outer-space-38913
 ![Space](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(42).png)
