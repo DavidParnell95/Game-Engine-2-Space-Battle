@@ -22,10 +22,15 @@ public class GenField : MonoBehaviour
         {
             /*
             Instantiate the asteroid, at a random point around the 
-            center of the field, with a default rotation 
+            center of the field, with a random rotation 
             */
-            Instantiate(asteroidPref, Random.insideUnitSphere * 
-            fieldRadius, Quaternion.identity);
+            Transform tempAst =Instantiate(asteroidPref, Random.insideUnitSphere * 
+            fieldRadius, Random.rotation);
+
+            //Scale asteroid, to make asteroids different sizes
+            tempAst.localScale = tempAst.localScale * Random.Range(0.5f,5);
+            //Set as child of AsteroidField, makes menue cleaner
+            tempAst.transform.parent = GameObject.Find("AsteroidField").transform;
         }
     }
 
