@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\GenDroids.cs" />
      <Compile Include="Assets\GenField.cs" />
+     <Compile Include="Assets\Health.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Lenovo/Documents/GitHub/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
