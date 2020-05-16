@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00008055641, g: 0.000044925117, b: 0.012176907, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0.013136078, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -175,6 +175,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 180320379}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &373244702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373244703}
+  m_Layer: 0
+  m_Name: Droids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373244703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373244702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -69.185486, y: -60.77692, z: -152.80118}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007190002}
   - component: {fileID: 2007190001}
+  - component: {fileID: 2007190003}
   m_Layer: 0
   m_Name: FieldCenter
   m_TagString: Untagged
@@ -946,6 +977,22 @@ Transform:
   m_Father: {fileID: 1191424261}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007190003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007190000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f089328a2c139e4bb3a3fae03f31f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droidPref: {fileID: 4361650539147543474, guid: e50425c2ba6013a4fb1d950f6dac941c,
+    type: 3}
+  fieldRadius: 100
+  count: 20
 --- !u!1001 &2121867178
 PrefabInstance:
   m_ObjectHideFlags: 0
