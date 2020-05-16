@@ -30,7 +30,7 @@ public class GenField : MonoBehaviour
             //Scale asteroid, to make asteroids different sizes
             tempAst.localScale = tempAst.localScale * Random.Range(0.5f,5);
             //Set as child of AsteroidField, makes menue cleaner
-            tempAst.transform.parent = GameObject.Find("AsteroidField").transform;
+            tempAst.transform.parent = GameObject.Find("Asteroids").transform;
         }
     }
 
