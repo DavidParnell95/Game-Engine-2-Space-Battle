@@ -36,10 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\GenDroids.cs" />
      <Compile Include="Assets\GenField.cs" />
      <Compile Include="Assets\Health.cs" />
      <Compile Include="Assets\PhysAsteroid.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\Alignment.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\Avoidance.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\Cohesion.cs" />
+     <Compile Include="Assets\Scripts\Droid\Flock.cs" />
+     <Compile Include="Assets\Scripts\Droid\FlockAgent.cs" />
+     <Compile Include="Assets\Scripts\Droid\FlockBehavior.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -592,11 +597,26 @@
     <Reference Include="UnityEngine.Monetization">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Jobs">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs.Editor">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -616,6 +636,9 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
@@ -628,6 +651,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -639,27 +665,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Jobs">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Jobs.Editor">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Users/david/Documents/Github/Game-Enginge-2-Space-Battle/Space Battle/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
