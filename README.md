@@ -12,7 +12,8 @@ attacking the main ship in a field of debris.
 
 ## Feature Aims
 - [x] Select Assets
-- [ ] Procedurally Spawned Asteroids
+- [X] Procedurally Spawned Asteroids
+- [X] Procedurally Spawned Droids
 - [ ] Fleeing Big Ship
 - [ ] Flocking drones
 - [ ] Drones chase big Ship
