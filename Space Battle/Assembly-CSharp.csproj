@@ -40,14 +40,21 @@
      <Compile Include="Assets\Health.cs" />
      <Compile Include="Assets\PhysAsteroid.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\Alignment.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\Attack.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\Avoidance.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\Cohesion.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\CompositeBehavior.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\StayInRadius.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\SteeredCohesion.cs" />
+     <Compile Include="Assets\Scripts\Droid\ContextFilter.cs" />
+     <Compile Include="Assets\Scripts\Droid\Filter Scripts\PhysicsFilter.cs" />
+     <Compile Include="Assets\Scripts\Droid\Filter Scripts\SameFlockFilter.cs" />
+     <Compile Include="Assets\Scripts\Droid\FilterFlockBehavior.cs" />
      <Compile Include="Assets\Scripts\Droid\Flock.cs" />
      <Compile Include="Assets\Scripts\Droid\FlockAgent.cs" />
      <Compile Include="Assets\Scripts\Droid\FlockBehavior.cs" />
+     <Compile Include="Assets\Scripts\Droid\Laser.cs" />
+     <Compile Include="Assets\Scripts\Ship\Movement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

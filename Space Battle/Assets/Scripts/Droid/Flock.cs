@@ -55,6 +55,7 @@ public class Flock : MonoBehaviour
             //Set as child of AsteroidField, makes menue cleaner
             tempDroid.transform.parent = GameObject.Find("Droids").transform;
             tempDroid.name = "Droid " +i;
+            tempDroid.Initialize(this);
 
             agents.Add(tempDroid);
         }

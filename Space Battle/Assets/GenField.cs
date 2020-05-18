@@ -12,8 +12,18 @@ using UnityEngine;
 public class GenField : MonoBehaviour
 {
     public Transform asteroidPref;//Asteroid object
+    public Transform debrisPrefA;
+    public Transform debrisPrefB;
+
     public int fieldRadius = 100;
     public int count = 250;//number of asteroids to generate 
+    public int debrisCount = 15;
+
+    [Range(1f,100f)]
+    public float minAsteroirdScale = 2;
+    [Range(1f,100f)]
+    public float maxAsteroirdScale =10 ;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +38,32 @@ public class GenField : MonoBehaviour
             fieldRadius, Random.rotation);
 
             //Scale asteroid, to make asteroids different sizes
-            tempAst.localScale = tempAst.localScale * Random.Range(0.5f,5);
+            tempAst.localScale = tempAst.localScale * Random.Range(minAsteroirdScale,maxAsteroirdScale);
             //Set as child of AsteroidField, makes menue cleaner
             tempAst.transform.parent = GameObject.Find("Asteroids").transform;
+        }
+
+        for(int j = 0; j<(debrisCount/2); j++)
+        {
+            Transform tempDeb =Instantiate(debrisPrefA, Random.insideUnitSphere * 
+            fieldRadius, Random.rotation);
+
+            //Scale debris, to make debris different sizes
+            tempDeb.localScale = tempDeb.localScale * Random.Range(0.5f,5);
+            //Set as child of debris, makes menue cleaner
+            tempDeb.transform.parent = GameObject.Find("Debris").transform;
+        }
+
+        for(int j = 0; j<(debrisCount/2); j++)
+        {
+            Transform tempDeb =Instantiate(debrisPrefB, Random.insideUnitSphere * 
+            fieldRadius, Random.rotation);
+
+            //Scale debris, to make debris different sizes
+            tempDeb.localScale = tempDeb.localScale * Random.Range(0.5f,5);
+            //Set as child of debris, makes menue cleaner
+            tempDeb.transform.parent = GameObject.Find("Debris").transform;
+
         }
     }
 
