@@ -229,11 +229,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   droidPref: {fileID: 4793105355603043801, guid: e50425c2ba6013a4fb1d950f6dac941c,
     type: 3}
-  behavior: {fileID: 11400000, guid: cf502e724d26450469a5fb430ac4df04, type: 2}
+  behavior: {fileID: 11400000, guid: 172d0fdbdf7d65b4cb1d62b15dbf91a6, type: 2}
   count: 20
   speedFactor: 10
   maxSpeed: 10
-  neighbourRadius: 9.25
+  neighbourRadius: 5.03
   avoidanceRadiusMult: 1
   fieldRadius: 100
 --- !u!1 &534669902

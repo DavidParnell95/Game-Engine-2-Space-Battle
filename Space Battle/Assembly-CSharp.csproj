@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\Droid\Behaviours\Alignment.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\Avoidance.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\Cohesion.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\CompositeBehavior.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\SteeredCohesion.cs" />
      <Compile Include="Assets\Scripts\Droid\Flock.cs" />
      <Compile Include="Assets\Scripts\Droid\FlockAgent.cs" />
      <Compile Include="Assets\Scripts\Droid\FlockBehavior.cs" />
