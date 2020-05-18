@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\Droid\Behaviours\Avoidance.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\Cohesion.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\CompositeBehavior.cs" />
+     <Compile Include="Assets\Scripts\Droid\Behaviours\StayInRadius.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\SteeredCohesion.cs" />
      <Compile Include="Assets\Scripts\Droid\Flock.cs" />
      <Compile Include="Assets\Scripts\Droid\FlockAgent.cs" />
