@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class GenField : MonoBehaviour
 {
-    public Transform asteroidPref;//Asteroid object
+    public Transform[] asteroidPref;//Asteroid object
     public Transform debrisPrefA;
     public Transform debrisPrefB;
 
@@ -23,6 +23,8 @@ public class GenField : MonoBehaviour
     public float minAsteroirdScale = 2;
     [Range(1f,100f)]
     public float maxAsteroirdScale =10 ;
+
+    private int selection;
     
 
     // Start is called before the first frame update
@@ -34,7 +36,9 @@ public class GenField : MonoBehaviour
             Instantiate the asteroid, at a random point around the 
             center of the field, with a random rotation 
             */
-            Transform tempAst =Instantiate(asteroidPref, Random.insideUnitSphere * 
+            selection = Random.Range(0,3);
+
+            Transform tempAst =Instantiate(asteroidPref[selection], Random.insideUnitSphere * 
             fieldRadius, Random.rotation);
 
             //Scale asteroid, to make asteroids different sizes

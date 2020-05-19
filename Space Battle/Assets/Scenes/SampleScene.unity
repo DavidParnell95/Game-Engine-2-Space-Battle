@@ -741,8 +741,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6407872b5ba4fc4d9035d591fdeba8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidPref: {fileID: 8965763040909877924, guid: b24d3e09101bcea4b8e3189fe85d7ab1,
-    type: 3}
+  asteroidPref:
+  - {fileID: 444136, guid: 7f7566e20b9ffe54798c1bf42201e1a9, type: 3}
+  - {fileID: 415920, guid: ae4427e80dceffe47b5179ce000667cb, type: 3}
+  - {fileID: 449400, guid: ead4c151b2850004782f62d3ac573cbe, type: 3}
+  - {fileID: 484066, guid: eeb1c2ea47bc7f04cb234f63e9bbf4dc, type: 3}
+  - {fileID: 415920, guid: 965a95650c5ae2a48b35aa03ca4a0a31, type: 3}
   debrisPrefA: {fileID: 6425812250225878502, guid: e5c7634093118744fa0d708c5ffa005c,
     type: 3}
   debrisPrefB: {fileID: 7414540311215393262, guid: ed687be3096f72f4a9103bfff30a8797,

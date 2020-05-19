@@ -43,7 +43,7 @@ public class GenerateGalaxt : MonoBehaviour
         //Generate Galaxies
         for(int i =0; i < galaxyCount; i++)
         {
-            selection = Random.Range(0,3);
+            
             Transform tempGal =Instantiate(galaxy, Random.insideUnitSphere *
             fieldRadius, Random.rotation);
 
@@ -55,7 +55,7 @@ public class GenerateGalaxt : MonoBehaviour
         //Generate Nebula
         for(int i =0; i < nebulaCount; i++)
         {
-            selection = Random.Range(0,3);
+            
             Transform tempNeb =Instantiate(nebula, Random.insideUnitSphere * 
             fieldRadius, Random.rotation);
 
