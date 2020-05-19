@@ -35,7 +35,7 @@ public class GenerateGalaxt : MonoBehaviour
             Transform tempPlan =Instantiate(planets[selection], Random.insideUnitSphere * 
             fieldRadius, Random.rotation);
 
-            //Scale asteroid, to make asteroids different sizes
+            //Scale asteroid, to make different sizes
             tempPlan.localScale = tempPlan.localScale * Random.Range(minScale,maxScale);
             tempPlan.transform.parent = GameObject.Find("Planets").transform;
         }
@@ -44,22 +44,22 @@ public class GenerateGalaxt : MonoBehaviour
         for(int i =0; i < galaxyCount; i++)
         {
             selection = Random.Range(0,3);
-            Transform tempGal =Instantiate(galaxy, Random.insideUnitSphere * 
+            Transform tempGal =Instantiate(galaxy, Random.insideUnitSphere *
             fieldRadius, Random.rotation);
 
-            //Scale asteroid, to make asteroids different sizes
+            //Scale asteroid, to make different sizes
             tempGal.localScale = tempGal.localScale * Random.Range(minGalScale,maxGalScale);
             tempGal.transform.parent = GameObject.Find("Galaxies").transform;
         }
 
-        //Generate Galaxies
+        //Generate Nebula
         for(int i =0; i < nebulaCount; i++)
         {
             selection = Random.Range(0,3);
             Transform tempNeb =Instantiate(nebula, Random.insideUnitSphere * 
             fieldRadius, Random.rotation);
 
-            //Scale asteroid, to make asteroids different sizes
+            //Scale asteroid, to make different sizes
             tempNeb.localScale = tempNeb.localScale * Random.Range(minGalScale,maxGalScale);
             tempNeb.transform.parent = GameObject.Find("Nebulas").transform;
         }

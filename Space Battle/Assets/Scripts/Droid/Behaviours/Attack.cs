@@ -18,7 +18,7 @@ public class NewBehaviourScript : MonoBehaviour
 
         if(InFront() && HaveLineOfSight())
         {
-            FireLazer();
+            FireLaser();
         }
     }
 
@@ -57,7 +57,7 @@ public class NewBehaviourScript : MonoBehaviour
         return false;
     }
 
-    void FireLazer()
+    void FireLaser()
     {
         Debug.Log("Fire the Laser (☞ﾟ∀ﾟ)☞");
         laser.FireLaser(hitPos);

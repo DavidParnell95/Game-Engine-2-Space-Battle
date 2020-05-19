@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1697578319196891686}
   - component: {fileID: -1209339728304224450}
   - component: {fileID: -5174897922877484854}
-  - component: {fileID: 4793105355603043801}
   - component: {fileID: -877698740882741949}
   m_Layer: 0
   m_Name: Droid
@@ -305,18 +304,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &4793105355603043801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3132559227452776079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225bdf11fd6f228438ad514a18d7f133, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-877698740882741949
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -476,20 +476,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planets:
   - {fileID: 419262, guid: 915aaf898641f4c42b5b0bf6777bf232, type: 3}
-  - {fileID: 459908, guid: 76c5527a13ac58a4494ef594b2b03b75, type: 3}
-  - {fileID: 495208, guid: 44e2007d7472da44396bc2a9e0fb3f39, type: 3}
   - {fileID: 408684, guid: c38c830f1a01cc2419486a2e550473ee, type: 3}
+  - {fileID: 459908, guid: 76c5527a13ac58a4494ef594b2b03b75, type: 3}
   - {fileID: 428496, guid: 9b81a1e9339b8bb4d90cdb180b6122d2, type: 3}
   - {fileID: 489550, guid: f2f3120c1bdbe1048b22872d840de803, type: 3}
   - {fileID: 486404, guid: 26e950ddae2da3a4581a7692739c06fc, type: 3}
+  - {fileID: 418172, guid: 01538f1c3c3e04848889987a7bca8e63, type: 3}
   - {fileID: 2522091005981765253, guid: 0207bcc7571006a4db2fb4a52cb395ec, type: 3}
   - {fileID: 8972543739587253550, guid: cac7cf278784daa499bc23925d5ea175, type: 3}
   galaxy: {fileID: 488912, guid: a0bba650a2f3bc74296aad288c08d469, type: 3}
-  nebula: {fileID: 479976, guid: 35415bd24cbf1304fb8f04ba7d00afb2, type: 3}
+  nebula: {fileID: 495208, guid: 44e2007d7472da44396bc2a9e0fb3f39, type: 3}
   planetCount: 15
   galaxyCount: 5
   nebulaCount: 10
-  fieldRadius: 900
+  fieldRadius: 800
   minScale: 9.2
   maxScale: 43.5
   minGalScale: 2
@@ -747,8 +747,8 @@ MonoBehaviour:
     type: 3}
   debrisPrefB: {fileID: 7414540311215393262, guid: ed687be3096f72f4a9103bfff30a8797,
     type: 3}
-  fieldRadius: 150
-  count: 4000
+  fieldRadius: 800
+  count: 7500
   debrisCount: 4
   minAsteroirdScale: 2
   maxAsteroirdScale: 10
