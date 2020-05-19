@@ -15,11 +15,10 @@ attacking the main ship in a field of debris.
 - [X] Procedurally Spawned Asteroids
 - [X] Procedurally Spawned Droids
 - [ ] Fleeing Big Ship
-- [ ] Flocking drones
-- [ ] Drones chase big Ship
-- [ ] Object Avoidance
+- [X] Flocking drones
+- [X] Drones chase big Ship
+- [X] Object Avoidance
 - [ ] Drones Shoot at Big Ship
-- [ ] Drones/Ship explode if they collide with an asteroid
 - [ ] Ship explodes after it takes sufficient damage
 
 ## Assets
