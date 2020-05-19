@@ -6,15 +6,14 @@ of a Sci-Fi space battle using Unity and premade assets.
 <[![](http://img.youtube.com/vi/Dmy_qUSMOWY/0.jpg)](http://www.youtube.com/watch?v=Dmy_qUSMOWY "")
 
 Inspiration for this project came from the start of the "Suicide Mission"
-from Bioware's Mass Effect 2, and is themed around the ships that entered the Omega 4 Relay prior to the events of the game.
-This scene involves 1 ship venturing into an area of space where none return from. The scene involves multiple smaller drones/fighter ships 
-attacking the main ship in a field of debris. 
+from Bioware's Mass Effect 2, and is themed around the a ship trying to reach a specific point (in this instance, a space station) in the center of a debris/ asteroid field. It must do this while being chased and shot at, by smaller droids.
 
 ## Feature Aims
 - [x] Select Assets
+- [X] Procedurally Spawned Solar System
 - [X] Procedurally Spawned Asteroids
 - [X] Procedurally Spawned Droids
-- [ ] Fleeing Big Ship
+- [X] Fleeing Big Ship
 - [X] Flocking drones
 - [X] Drones chase big Ship
 - [X] Object Avoidance
