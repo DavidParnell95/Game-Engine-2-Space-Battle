@@ -31,10 +31,8 @@ https://assetstore.unity.com/packages/3d/vehicles/space/space-droid-32200
 https://assetstore.unity.com/packages/3d/vehicles/space/astra-starship-fleet-package-4392
 ![Ship](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(43).png)
 
-### Asteroids/ Debris [Asset - Asteroids Pack by Mark Dion]
-https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988
-![Asteroid](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(41).png)
-
 ### Backdrop [Asset - Vast Outer Space by Prodigious Creations]
 https://assetstore.unity.com/packages/3d/environments/sci-fi/vast-outer-space-38913
 ![Space](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(42).png)
+
+## Demo Video
