@@ -33,12 +33,13 @@ public class Laser : MonoBehaviour
         {
             lr.SetPosition(0,transform.position);
             lr.SetPosition(1,targetPosition);
+            lr.enabled = true;
+
             laserLight.enabled = true;
             canFire = false;
-        }
 
-        Invoke("TurnOffLaser", laserOffTime);
-        Invoke("CanFire", fireDelay);
+            Invoke("TurnOffLaser", laserOffTime);
+        }
     }
 
     void TurnOffLaser()
@@ -50,6 +51,6 @@ public class Laser : MonoBehaviour
 
     public float Distance
     {
-        get {return maxDistance}
+        get {return range;} 
     }
 }

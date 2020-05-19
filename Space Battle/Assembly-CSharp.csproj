@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Droid\FlockAgent.cs" />
      <Compile Include="Assets\Scripts\Droid\FlockBehavior.cs" />
      <Compile Include="Assets\Scripts\Droid\Laser.cs" />
+     <Compile Include="Assets\Scripts\GenerateGalaxt.cs" />
      <Compile Include="Assets\Scripts\Ship\Movement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
