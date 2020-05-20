@@ -42,6 +42,11 @@ public class Flock : MonoBehaviour
         squareNeighbourRadius = neighbourRadius * neighbourRadius;
         squareAvoidanceRadius = squareNeighbourRadius * avoidanceRadiusMult * avoidanceRadiusMult;
 
+        GenerateDroids();
+    }
+
+    void GenerateDroids()
+    {
         for(int i =0; i < count; i++)
         {
             FlockAgent tempDroid =Instantiate(droidPref,

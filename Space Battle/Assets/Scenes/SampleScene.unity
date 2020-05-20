@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &5397846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4269262450733381830, guid: b953c970873e84043affd1d45bd40ec5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1894383046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &373244702
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +138,7 @@ GameObject:
   - component: {fileID: 373244703}
   - component: {fileID: 373244704}
   - component: {fileID: 373244705}
+  - component: {fileID: 373244706}
   m_Layer: 0
   m_Name: Droids
   m_TagString: Untagged
@@ -173,7 +180,7 @@ MonoBehaviour:
   maxSpeed: 6
   neighbourRadius: 5.03
   avoidanceRadiusMult: 0.193
-  fieldRadius: 100
+  fieldRadius: 225
 --- !u!114 &373244705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84944601fabc0f42b3f358831e17020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1892373358}
+  target: {fileID: 5397846}
   speed: 6
   rotationalDamp: 0.5
   detectDistance: 20
@@ -196,6 +203,23 @@ MonoBehaviour:
   brake: 1
   decelRate: 0
   brakeRate: 0
+--- !u!114 &373244706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373244702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3533408f16b6374e84df276ed362426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 5397846}
+  speed: 10
+  rotationalDamp: 0.5
+  detectDistance: 20
+  rayCastOffset: 2.5
 --- !u!1001 &560535675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -561,12 +585,6 @@ Transform:
   m_Father: {fileID: 1134376812}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1892373358 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6785775177266058153, guid: b953c970873e84043affd1d45bd40ec5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1894383046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1894383046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -574,6 +592,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 534669906, guid: b953c970873e84043affd1d45bd40ec5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 857820380, guid: b953c970873e84043affd1d45bd40ec5, type: 3}
       propertyPath: target
       value: 
@@ -763,8 +785,8 @@ MonoBehaviour:
   fieldRadius: 800
   count: 7500
   debrisCount: 4
-  minAsteroirdScale: 2
-  maxAsteroirdScale: 10
+  minAsteroirdScale: 7.3
+  maxAsteroirdScale: 47.8
 --- !u!4 &2007190002
 Transform:
   m_ObjectHideFlags: 0

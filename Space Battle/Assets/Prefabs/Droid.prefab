@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5174897922877484854}
   - component: {fileID: -877698740882741949}
   - component: {fileID: -1564925470418864318}
+  - component: {fileID: -2512928908406548414}
   m_Layer: 0
   m_Name: Droid
   m_TagString: Untagged
@@ -46,7 +47,7 @@ SphereCollider:
   m_GameObject: {fileID: 3132559227452776079}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 40
   m_Center: {x: 0, y: 0, z: 0}
@@ -331,6 +332,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225bdf11fd6f228438ad514a18d7f133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &-2512928908406548414
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3132559227452776079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7424088783404388505
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\Droid\Behaviours\CompositeBehavior.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\StayInRadius.cs" />
      <Compile Include="Assets\Scripts\Droid\Behaviours\SteeredCohesion.cs" />
+     <Compile Include="Assets\Scripts\Droid\ChaseShip.cs" />
      <Compile Include="Assets\Scripts\Droid\ContextFilter.cs" />
      <Compile Include="Assets\Scripts\Droid\Filter Scripts\PhysicsFilter.cs" />
      <Compile Include="Assets\Scripts\Droid\Filter Scripts\SameFlockFilter.cs" />

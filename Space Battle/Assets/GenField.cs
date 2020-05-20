@@ -30,12 +30,15 @@ public class GenField : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GenerateAsteroids();
+        GenerateDebris();
+    }
+
+    public void GenerateAsteroids()
+    {
         for(int i =0; i < count; i++)
         {
-            /*
-            Instantiate the asteroid, at a random point around the 
-            center of the field, with a random rotation 
-            */
+            //Instantiate the asteroid, at a random point around the center of the field, with a random rotation
             selection = Random.Range(0,3);
 
             Transform tempAst =Instantiate(asteroidPref[selection], Random.insideUnitSphere * 
@@ -46,7 +49,10 @@ public class GenField : MonoBehaviour
             //Set as child of AsteroidField, makes menue cleaner
             tempAst.transform.parent = GameObject.Find("Asteroids").transform;
         }
+    }
 
+    public void GenerateDebris()
+    {
         for(int j = 0; j<(debrisCount/2); j++)
         {
             Transform tempDeb =Instantiate(debrisPrefA, Random.insideUnitSphere * 

@@ -28,7 +28,13 @@ public class GenerateGalaxt : MonoBehaviour
 
     void Start()
     {
-        //Generate Planets
+        GeneratePlanets();
+        GenerateGalaxies();
+        GenerateNebulas();
+    }
+
+    //Generate Planets
+    public void GeneratePlanets(){
         for(int i =0; i < planetCount; i++)
         {
             selection = Random.Range(0,3);
@@ -39,8 +45,11 @@ public class GenerateGalaxt : MonoBehaviour
             tempPlan.localScale = tempPlan.localScale * Random.Range(minScale,maxScale);
             tempPlan.transform.parent = GameObject.Find("Planets").transform;
         }
+    }
 
-        //Generate Galaxies
+    //Generate Galaxies
+    public void GenerateGalaxies()
+    {
         for(int i =0; i < galaxyCount; i++)
         {
             
@@ -51,8 +60,11 @@ public class GenerateGalaxt : MonoBehaviour
             tempGal.localScale = tempGal.localScale * Random.Range(minGalScale,maxGalScale);
             tempGal.transform.parent = GameObject.Find("Galaxies").transform;
         }
+    }
 
-        //Generate Nebula
+    //Generate Nebulas
+    public void GenerateNebulas()
+    {
         for(int i =0; i < nebulaCount; i++)
         {
             
@@ -63,6 +75,5 @@ public class GenerateGalaxt : MonoBehaviour
             tempNeb.localScale = tempNeb.localScale * Random.Range(minGalScale,maxGalScale);
             tempNeb.transform.parent = GameObject.Find("Nebulas").transform;
         }
-
     }
 }
