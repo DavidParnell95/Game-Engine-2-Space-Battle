@@ -11,7 +11,21 @@ public class Movement : MonoBehaviour
 
     [SerializeField]float detectDistance = 20f;
     [SerializeField]float rayCastOffset = 2.5f;
+
+    [Range(10,100f)]
+    public float stopDist = 100f;
     
+    public float maxtoZero = 12f;//Max time to decelerate to stop 
+    public float brake = 1f;
+    public float decelRate;
+    public float brakeRate;
+    private float dist;
+
+    void Start()
+    {
+        decelRate = speed / maxtoZero;
+        brakeRate = speed / brake;
+    }
     
     void Update()
     {
@@ -21,7 +35,9 @@ public class Movement : MonoBehaviour
         Move();
     }
 
-     void Turn()
+    
+
+    void Turn()
     {
         Vector3 pos = target.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(pos);
@@ -32,7 +48,27 @@ public class Movement : MonoBehaviour
 
     void Move()
     {
-        transform.position += transform.forward * speed * Time.deltaTime;
+        dist = Vector3.Distance(target.position,transform.position);
+        Debug.Log(dist + " Away");
+
+        //If outside stopDistance keep going
+        if(dist > stopDist)
+        {
+            transform.position += transform.forward * speed * Time.deltaTime;
+            Debug.Log("Current Speed: " + speed);
+        }
+
+        //Otherwise decelerate to stop 
+        else
+        {
+            speed = speed - decelRate;
+            
+            if(speed > 0)
+            {
+                transform.position += transform.forward * speed * Time.deltaTime;
+                Debug.Log("Current Speed: " + speed);
+            }
+        }
     }
 
     void PathFinding()

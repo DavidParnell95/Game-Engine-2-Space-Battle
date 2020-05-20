@@ -191,6 +191,11 @@ MonoBehaviour:
   rotationalDamp: 0.5
   detectDistance: 20
   rayCastOffset: 2.5
+  stopDist: 100
+  maxtoZero: 6
+  brake: 1
+  decelRate: 0
+  brakeRate: 0
 --- !u!1001 &560535675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -577,13 +582,17 @@ PrefabInstance:
       propertyPath: speed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 857820380, guid: b953c970873e84043affd1d45bd40ec5, type: 3}
+      propertyPath: stopDist
+      value: 24.2
+      objectReference: {fileID: 0}
     - target: {fileID: 857820382, guid: b953c970873e84043affd1d45bd40ec5, type: 3}
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 857820383, guid: b953c970873e84043affd1d45bd40ec5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6785775177266058153, guid: b953c970873e84043affd1d45bd40ec5,
         type: 3}

@@ -44,10 +44,6 @@ public class Flock : MonoBehaviour
 
         for(int i =0; i < count; i++)
         {
-            /*
-            Instantiate the asteroid, at a random point around the 
-            center of the field, with a random rotation 
-            */
             FlockAgent tempDroid =Instantiate(droidPref,
             UnityEngine.Random.insideUnitSphere * fieldRadius,
             UnityEngine.Random.rotation);
