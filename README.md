@@ -20,6 +20,9 @@ from Bioware's Mass Effect 2, and is themed around the a ship trying to reach a 
 - [ ] Drones Shoot at Big Ship
 - [ ] Ship explodes after it takes sufficient damage
 
+## Demo Video
+[![](http://img.youtube.com/vi/yreNqn6igbI/0.jpg)](http://www.youtube.com/watch?v=yreNqn6igbI "Demo")
+
 ## Assets
 The following assets were taken from the Unity Asset store for the development of this project.
 
@@ -38,6 +41,3 @@ https://assetstore.unity.com/packages/3d/environments/sci-fi/vast-outer-space-38
 ### Debris [Asset - Space_Objects by BLUEWARM Digital Mutlimedia]
 https://assetstore.unity.com/packages/3d/props/space-objects-91874
 ![Debris](https://github.com/DavidParnell95/Game-Enginge-2-Space-Battle/blob/master/Screenshot%20(150).png)
-
-## Demo Video
-[![](http://img.youtube.com/vi/yreNqn6igbI/0.jpg)](http://www.youtube.com/watch?v=yreNqn6igbI "Demo")
