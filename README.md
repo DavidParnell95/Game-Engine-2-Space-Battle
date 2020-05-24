@@ -1,6 +1,7 @@
 # Game-Enginge-2-Space-Battle
 C15704085 assignment for Game Engines 2 module. Unity recreation/tribute
-of a Sci-Fi space battle using Unity and premade assets.
+of a Sci-Fi space battle using Unity and premade assets. My assignment involves the procedural generation
+of a solar syster/ galaxy and droids in unity. A flock of these droids act as a single unity or hive, with object avoidance, facing the same direction and behaving similarly. The flock of droids follows a single large ship as it attempts to traverse a debris and asteroid field to reach a specific point, in this case a special piece of space debris
  
 ## Inspiration
 [![](http://img.youtube.com/vi/Dmy_qUSMOWY/0.jpg)](http://www.youtube.com/watch?v=Dmy_qUSMOWY "")
@@ -50,6 +51,9 @@ https://www.youtube.com/watch?v=TsB_6yjACDY&list=PL_eGgISVYZkfZRSzSDyG3tHNf5_DF-
 The procedural generation of planets, galaxies, asteroids, droids and debris was all self coded, along with the main ship's 
 seek behaviour for the space object. 
 The rotation of the asteroids was also self coded.
+
+### Feature I'm Proud of: 
+I am rather proud of the procedural generation as the Game Engines 1 assignment relating to procedural generation seemed difficult at the time to me, it shows that I've improved since then. It also provides a nice variety to the look of this project as it's more unlikely that the same scene will be created again on subsequent instances.
 
 ## Assets
 The following assets were taken from the Unity Asset store for the development of this project.
