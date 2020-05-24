@@ -23,6 +23,34 @@ from Bioware's Mass Effect 2, and is themed around the a ship trying to reach a 
 ## Demo Video
 [![](http://img.youtube.com/vi/yreNqn6igbI/0.jpg)](http://www.youtube.com/watch?v=yreNqn6igbI "Demo")
 
+## How it works
+### Space generation 
+All objects in the scene except for the the main ship and a space object, is procedurally generated. 
+This was done by instantiating the objects in random positions in a sphere (of varying radii) around a central point.
+In some instances, mainly asteroids, planets etc. objects are also selected randomly from an array and also have their 
+rotation and scale adjusted randomly to give even greater variety in appearances. 
+
+### Droid AI 
+Once the droids are instantiated they are added to a parent "flock". This flock applies a composite behaviour, consisting of cohesion (moving together as one object, with a list of droids being iterated through with the appropriate behaviour applied to each droid), avoidance (using raycasts to determine nearby objects) and alignment ( facing the same direction, if the droid has a neighbouring droid object they are added to a list, which is iterated through implementing the same behaviour on each droid to face in the direction of the flock). These scripts had a behaviour object created from them and combined in a composite behavour, which was applied to the flock
+
+### Main Ship AI 
+The main ship is given an object (called space object in this case) which it then aims to reach. As it travels towards the target, raycasts are projected from the ship and if they hit a nearby object, the ship adjusts its alignment to avoid the object on its path. Once the main ship comes within a give radius of the target destination, it begins to slow down until it comes to a complete stop.
+
+## Tutorials vs Self Code
+As with any college project, some tutorials were used to complete the assignments
+### Tutorials:
+The flocking behaviours of the drones (alignment, cohesion and avoidance) was implemented using a
+tutorial which was adapted from 2D to 3D, available here: 
+https://www.youtube.com/watch?v=mjKINQigAE4&list=PL5KbKbJ6Gf99UlyIqzV1UpOzseyRn5H1d
+
+A portion of the main ship's pathfinding, mainly object avoidance was implemented using a tutorial also, available here:
+https://www.youtube.com/watch?v=TsB_6yjACDY&list=PL_eGgISVYZkfZRSzSDyG3tHNf5_DF-o5H&index=20
+
+### Self coded:
+The procedural generation of planets, galaxies, asteroids, droids and debris was all self coded, along with the main ship's 
+seek behaviour for the space object. 
+The rotation of the asteroids was also self coded.
+
 ## Assets
 The following assets were taken from the Unity Asset store for the development of this project.
 
